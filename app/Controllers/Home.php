@@ -17,7 +17,7 @@ class Home extends BaseController
         $latitude = $this->request->getPost('latitude');
         $longitude = $this->request->getPost('longitude');
         $locationName = $this->request->getPost('locationName');
-        $video = $this->request->getPost('video');
+        $video = $this->request->getPost('video') || null;
 
 
         // Decode the image from base64, you'll need uncode from basee
